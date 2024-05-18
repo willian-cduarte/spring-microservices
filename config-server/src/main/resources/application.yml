@@ -1,0 +1,75 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+#  profiles:
+#    active:
+#      - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:willian-cduarte/spring-cloud-config-server
+          ignore-local-ssh-settings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          timeout: 10
+#          preferred-authentications: publickey
+#          hostKey: ~/.ssh/known_hosts
+#          host-key-algorithm: ssh-rsa
+          search-paths:
+            - 'greeting-service*'
+          default-label: main
+          clone-on-start: true
