@@ -83,7 +83,7 @@ public class BookController {
         book.setCurrency(currency);
         var port = environment.getProperty("local.server.port");
 
-        book.setEnvironment(port);
+        book.setEnvironment("Book port "+ port + " Exchange port " + exchange.getEnvironment());
         logger.info(String.format("response : %s", book.toString()));
         return book;
     }

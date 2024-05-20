@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: naming-server
+
+#  config:
+#    import: "optional:configserver:"
+
+  cloud:
+    config:
+      import-check:
+        enabled: false
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
